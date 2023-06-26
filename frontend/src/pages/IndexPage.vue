@@ -1,49 +1,220 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component>
-  </q-page>
+  <SubPageHeaderComponent title="Demoteam Zuoz" header-image="../skier.jpg"/>
+  <div class="row justify-evenly">
+
+    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+      <div style="max-width: 900px" class="text q-ma-xl">
+
+        In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+        Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+        Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+    </PageEntryContainer>
+    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+      <div style="max-width: 900px" class="text q-ma-xl">
+
+        In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+        Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+        Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+    </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>    <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
+    <div style="max-width: 900px" class="text q-ma-xl">
+
+      In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
+
+
+
+      Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
+
+
+
+      Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos. </div>
+  </PageEntryContainer>
+  </div>
 </template>
 
-<script lang="ts">
-import { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
-import { defineComponent, ref } from 'vue';
+<script setup lang="ts">
+import PageEntryContainer from 'components/containers/PageEntryContainer.vue';
+import SubPageHeaderComponent from 'components/SubPageHeaderComponent.vue';
 
-export default defineComponent({
-  name: 'IndexPage',
-  components: { ExampleComponent },
-  setup () {
-    const todos = ref<Todo[]>([
-      {
-        id: 1,
-        content: 'ct1'
-      },
-      {
-        id: 2,
-        content: 'ct2'
-      },
-      {
-        id: 3,
-        content: 'ct3'
-      },
-      {
-        id: 4,
-        content: 'ct4'
-      },
-      {
-        id: 5,
-        content: 'ct5'
-      }
-    ]);
-    const meta = ref<Meta>({
-      totalCount: 1200
-    });
-    return { todos, meta };
-  }
-});
+
 </script>
+
+<style>
+
+
+.text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: min(16px, 3vw);
+  color: white;
+  text-align: center;
+}
+
+</style>
