@@ -46,7 +46,7 @@
 
         <div v-if="image" class="image-beside-text" :style="column ? 'margin: auto; max-width: 650px; margin-bottom: 30px' : ''">
           <a :href="iconLink" target="_blank" :style="iconLink ? 'cursor: pointer' : ''">
-          <img style="width: 100%" :src="image" alt="welcome"/>
+          <img style="width: 100%" :src="image" alt="welcome" type="image/jpeg"/>
           </a>
 
           <!-- Add the small image -->

@@ -86,6 +86,7 @@ defineProps({
   box-shadow: black 0 0 10px 0;
   transform: translateY(0); /* Initial translation */
   filter: brightness(0.9) saturate(1);
+  content: 'image/jpeg';
 }
 
 .menu {
