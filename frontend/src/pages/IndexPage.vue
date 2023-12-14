@@ -1,23 +1,30 @@
 <template>
-  <SubPageHeaderComponent title="Demoteam Zuoz" header-image="../skier1.jpg" />
+  <SubPageHeaderComponent title="" header-image="../skier1.jpg" />
   <div class="row justify-evenly">
 
     <PageEntryContainer color="#383838" :shadowed="false" class="flex column" style="align-content:center">
-      <div class="image-container q-mt-lg">
-        <img src="zuozLogo.jpg" alt="Image description" />
-      </div>
+
+
       <div style="max-width: 900px" class="text q-ma-xl">
 
-        In unserem Demoteam sind Gian Cla (Coach), Florian, Freddi, Giancarlo, Sean, Liam, Sam, Elisa und Mevina.
-
-
-
-        Das Demoteam nimmt an der Snow-Show in Celerina teil und am Swiss Snow Happening. Das Swiss Snow Happening findet jedes Jahr Ende der Wintersaison statt und ist ein schweizweiter Wettkampf zwischen Schneesportlehrern und Skischulen.
-
-
-
-        Schaut doch auf der Instagramseite des Demoteams vorbei. Dort findet ihr viele Infos, Fotos und Videos.
+        Acht leidenschaftliche Skifahrerinnen und Skifahrer meistern einen Hang von 300-400 Metern, während sie kunstvolle Formationen und verschiedene choreografische Elemente perfekt synchronisieren. Mit intensivem Training bereitet sich das Team auf verschiedene Events vor, darunter das Swiss Snow Happening 2024, wo ihre beeindruckenden Darbietungen das Publikum fesseln.
+  <br><br>
+        Das Team agiert als Verein und bildet eine Gemeinschaft.
       </div>
+
+      <div style="max-width: 1140px" class="center-content column">
+        <image-text-component title="" image="../instaTeam.jpg" text="" :request-button="false" icon="insta.png" icon-link="https://www.instagram.com/demoteam_zuoz/" column/>
+      </div>
+
+
+      <q-btn
+        aria-label="Menu"
+        class="bg-primary q-mr-lg text-white menu q-mx-auto q-mb-xl"
+        label="Mitglied Werden"
+        style="border-radius: 20px; max-width: 200px"
+        @click="openDialog($q)"
+      />
+
     </PageEntryContainer>
 
   </div>
@@ -26,23 +33,24 @@
 <script setup lang="ts">
 import PageEntryContainer from 'components/containers/PageEntryContainer.vue';
 import SubPageHeaderComponent from 'components/SubPageHeaderComponent.vue';
+import {openDialog} from 'src/helper/dialog-helper';
+import ImageTextComponent from 'components/ImageTextComponent.vue';
 </script>
 
 <style scoped>
 .text {
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  font-size: min(16px, 3vw);
+  font-size: min(17px, 4vw);
   color: white;
   text-align: center;
 }
 
-.image-container {
-  display: flex;
+.center-content {
   align-items: center;
   justify-content: center;
-  height: 300px; /* Set the desired height */
 }
+
 
 .image-container img {
   max-width: 100%;

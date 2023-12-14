@@ -6,9 +6,9 @@
       style="background-color: #eaeaea; width: 800px; height: 500px; border-radius: 5px"
     >
       <div class="medium-text q-ml-lg q-mr-lg" style="text-align: center; color: black; margin-bottom: 0">
-        Wenn Ihr uns unterstützen möchtet, werdet doch Vereinsmitglied. Der Mitgliederbeitrag beträgt CHF 25.- pro Person/Jahr.
+        Unterstützt uns als Vereinsmitglied. Der Mitgliederbeitrag beträgt CHF 25.- pro Person/Jahr.
 
-        Im folgenden Formular könnt Ihr euch anmelden.
+        Ihr werdet mit einer Rechnung kontaktiert.
       </div>
 
 
@@ -47,7 +47,7 @@
             v-model="street"
             label="Strasse & Nr."
             :rules="[]"
-            style="width: 300px"
+            style="width: 300px; margin-bottom: 40px"
           />
 
           <q-input
@@ -56,7 +56,7 @@
             v-model="plz"
             label="PLZ"
             :rules="[]"
-            style="width: 300px"
+            style="width: 300px; margin-bottom: 40px"
           />
 
           <q-input
@@ -65,7 +65,7 @@
             v-model="place"
             label="Ort"
             :rules="[]"
-            style="width: 300px"
+            style="width: 300px; margin-bottom: 40px"
           />
 
 
@@ -167,7 +167,7 @@ async function onOk() {
 .medium-text {
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  font-size: clamp(12px, 1vw, 17px);
+  font-size: clamp(16px, 1vw, 17px);
   color: white;
   max-width: 1200px;
   margin-top: 30px;

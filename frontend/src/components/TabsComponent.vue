@@ -8,14 +8,15 @@
   </div>
 
   <div class="tab-buttons q-mr-md"  v-if="!showHamburgerMenu">
+    <a class="effect" @click="routeToPage(ROUTES.HOME)">Home</a>
     <a class="effect" @click="routeToPage(ROUTES.TEAM)">Unser Team</a>
-    <a class="effect" @click="routeToPage(ROUTES.ABOUT_US)">Verein</a>
+    <a class="effect" @click="routeToPage(ROUTES.VEREIN)">Verein</a>
   </div>
 
   <div class="mobile-menu" v-if="isHamburgerOpen">
     <a style="margin-top: 20px" class="effect" @click="routeToPage(ROUTES.HOME); isHamburgerOpen = !isHamburgerOpen">Home</a>
     <a class="effect" @click="routeToPage(ROUTES.TEAM); isHamburgerOpen = !isHamburgerOpen">Unser Team</a>
-    <a class="effect" @click="routeToPage(ROUTES.ABOUT_US); isHamburgerOpen = !isHamburgerOpen">Verein</a>
+    <a class="effect" @click="routeToPage(ROUTES.VEREIN); isHamburgerOpen = !isHamburgerOpen">Verein</a>
     <div style="display: flex; justify-content: center;">
       <q-btn
         aria-label="Menu"
@@ -90,7 +91,7 @@ async function routeToPage(page: RouteRecordRaw) {
 .tab-buttons {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 260px;
 }
 
 .effect {

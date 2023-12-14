@@ -11,6 +11,16 @@ const routes: Record<string, RouteRecordRaw> = {
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/TeamPage.vue') }],
   },
+  VEREIN: {
+    path: '/verein',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/VereinPage.vue') }],
+  },
+  IMPRESSUM: {
+    path: '/impressum',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/ImpressumPage.vue') }],
+  },
   // Always leave this as last one,
   // but you can also remove it
   ERROR: {
