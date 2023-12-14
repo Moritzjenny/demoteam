@@ -1,6 +1,6 @@
 <template>
   <div class="tab-buttons">
-    <a class="effect" @click="routeToPage(ROUTES.SERVICE)">Unser Team</a>
+    <a class="effect" @click="routeToPage(ROUTES.TEAM)">Unser Team</a>
     <a class="effect" @click="routeToPage(ROUTES.ABOUT_US)">Verein</a>
     <a class="effect" @click="routeToPage(ROUTES.PORTFOLIO)">News</a>
   </div>
