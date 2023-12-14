@@ -61,14 +61,14 @@ module.exports = configure(function (/* ctx */) {
         node: 'node16'
       },
 
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
-      // vueRouterBase,
+      vueRouterMode: 'history', // available values: 'hash', 'history'
+      vueRouterBase: 'demoteam/frontend',
       // vueDevtools,
       // vueOptionsAPI: false,
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      publicPath: '/demoteam/',
+      publicPath: '/demoteam/frontend',
       // analyze: true,
       // env: {},
       // rawDefine: {}
