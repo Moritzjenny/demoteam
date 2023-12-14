@@ -1,10 +1,9 @@
 <template>
   <div>
-
-
     <button @click="handleBackendCall">Call backend function</button>
     <p v-if="backendResponse">{{ backendResponse }}</p>
   </div>
+
 </template>
 
 <script setup lang="ts">

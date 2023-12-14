@@ -1,7 +1,7 @@
 <template>
   <div class="footer-container">
     <div class="footer row justify-center">
-     <div> © {{ getCurrentYear() }}Demoteam Zuoz</div>&nbsp;<div class="link" @click="routeToPage(ROUTES.AGB)">Impressum</div>
+     <div> © {{ getCurrentYear() }} Demoteam Zuoz</div>&nbsp;<div class="link" @click="routeToPage(ROUTES.AGB)">Impressum</div>
     </div>
   </div>
 </template>

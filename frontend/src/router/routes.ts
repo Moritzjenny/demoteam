@@ -9,7 +9,7 @@ const routes: Record<string, RouteRecordRaw> = {
   TEAM: {
     path: '/team',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('components/TeamComponent.vue') }],
+    children: [{ path: '', component: () => import('pages/TeamPage.vue') }],
   },
   // Always leave this as last one,
   // but you can also remove it

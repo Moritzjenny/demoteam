@@ -13,17 +13,23 @@
 import { onMounted, onUnmounted, PropType, ref } from 'vue';
 
 const scrollY = ref(0);
+const isOnMobile = ref(window.innerWidth <= 900);
 let lastScrollY = 0;
 let ticking = false;
 
+const calculateOffset = () => {
+  isOnMobile.value = window.innerWidth <= 900;
+};
+
 onMounted(() => {
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', calculateOffset);
 });
 
 onUnmounted(() => {
   window.removeEventListener('scroll', onScroll);
+  window.removeEventListener('resize', calculateOffset);
 });
-
 const onScroll = () => {
   lastScrollY = window.scrollY;
   requestTick();
@@ -37,7 +43,11 @@ const requestTick = () => {
 };
 
 const updatePosition = () => {
-  scrollY.value = lastScrollY * 0.3; // Adjust the scroll speed as per your preference
+  if (!isOnMobile.value){
+    scrollY.value = lastScrollY * 0.3;
+  } else {
+    scrollY.value = 0;
+  }
   ticking = false;
 };
 

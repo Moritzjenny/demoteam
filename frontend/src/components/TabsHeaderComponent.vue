@@ -1,13 +1,8 @@
 <template>
-    <q-header :class="{'header': scrolled, 'headerScrolled': !scrolled}">
-      <img class="logo" :src="logoImage" @mouseover="handleMouseOver" @mouseleave="handleMouseLeave"  alt="logo" @click="routeToPage(ROUTES.HOME)"/>
+    <q-header :class="{'header': scrolled || isMobile, 'headerScrolled': !scrolled}">
+      <img :class="{'logo': !isMobile, 'logo-mobile' : isMobile}" :src="logoImage" @mouseover="handleMouseOver" @mouseleave="handleMouseLeave"  alt="logo" @click="routeToPage(ROUTES.HOME)"/>
       <TabsComponent style="position: absolute; right: 230px"/>
-      <q-btn
-        aria-label="Menu"
-        class="bg-primary q-mr-sm text-white menu"
-        label="Mitglied Werden"
-        style="border-radius: 20px; min-width: 130px"
-      />
+
     </q-header>
 </template>
 
@@ -22,6 +17,11 @@ defineProps({
   scrolled: {
     type: Boolean as PropType<boolean>,
     required: true
+  },
+  isMobile: {
+    type: Boolean as PropType<boolean>,
+    default: false,
+    required: false
   }
 });
 
@@ -80,6 +80,16 @@ async function routeToPage(page: RouteRecordRaw) {
   margin-left: 20px;
   margin-top: 40px;
   height: 160%;
+  cursor: pointer;
+  background-size: contain;
+}
+
+
+.logo-mobile {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 120%;
   cursor: pointer;
   background-size: contain;
 }
