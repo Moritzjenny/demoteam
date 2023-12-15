@@ -55,21 +55,21 @@ module.exports = configure(function (/* ctx */) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
-      //distDir: '../backend/static',
-      distDir: 'dist/spa',
+      distDir: '../backend/static',
+      //distDir: 'dist',
       target: {
         browser: [ 'es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1' ],
         node: 'node16'
       },
 
       vueRouterMode: 'history', // available values: 'hash', 'history'
-      //vueRouterBase: 'demoteam/frontend',
+      vueRouterBase: '/demoteam/',
       // vueDevtools,
       // vueOptionsAPI: false,
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      publicPath: '/demoteam/frontend/',
+      publicPath: '/demoteam/',
       // analyze: true,
       // env: {},
       // rawDefine: {}
