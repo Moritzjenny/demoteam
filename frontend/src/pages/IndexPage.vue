@@ -13,7 +13,7 @@
       </div>
 
       <div style="max-width: 1140px" class="center-content column">
-        <image-text-component title="" image="instaTeam.jpg" text="" :request-button="false" icon="insta.png" icon-link="https://www.instagram.com/demoteam_zuoz/" column/>
+        <image-text-component title="" image="instateam.jpg" text="" :request-button="false" icon="insta.png" icon-link="https://www.instagram.com/demoteam_zuoz/" column/>
       </div>
 
 
