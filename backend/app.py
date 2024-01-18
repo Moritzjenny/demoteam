@@ -18,18 +18,11 @@ def get_data():
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def catch_all(path):
-    if path.endswith('.js'):
-        # Explicitly set the MIME type for JavaScript files
-        return send_from_directory(app.static_folder, path, mimetype='application/javascript')
-    elif path.endswith('.css'):
-        # Explicitly set the MIME type for CSS files
-        return send_from_directory(app.static_folder, path, mimetype='text/css')
-    elif path:
-        # Attempt to serve any other static files
+    # Check if path is for a static file and serve it
+    if "." in path:
         return send_from_directory(app.static_folder, path)
-    else:
-        # Default to index.html
-        return send_from_directory(app.static_folder, 'index.html')
+    # Serve index.html for all other paths
+    return send_from_directory(app.static_folder, 'index.html')
 
 # Run the app.
 if __name__ == "__main__":
