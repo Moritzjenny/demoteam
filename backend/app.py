@@ -1,17 +1,42 @@
-from flask import Flask, render_template, jsonify, send_from_directory
+from flask import Flask, render_template, jsonify, send_from_directory, request
+try:
+    from . import mailService
+except ImportError:
+    import mailService
 
 app = Flask(__name__, static_folder='static', template_folder='static')
 app.config['MIME_TYPES'] = {'js': 'application/javascript'}
 
+
 # Define an API route to serve data to the frontend
-@app.route('/api/data')
-def get_data():
-    # Replace this with your own data retrieval logic
-    data = {
-        'message': 'Hello from Flask!',
-        'numbers': [1, 2, 3, 4, 5]
-    }
-    return jsonify(data)
+@app.route('/api/data', methods=['POST'])
+def submit_form():
+    try:
+        # Get the JSON data from the request body
+        request_data = request.json
+        print(request_data)
+
+        # Insert the data into the database
+        # sqlService.insert_contact_info(request_data['type']['label'], request_data['firstName'], request_data['name'], request_data['mail'], request_data['phone'], request_data['message'])
+
+        # Send email
+        mailService.send_mail(request_data['firstName'], request_data['name'], request_data['mail'], request_data['street'], request_data['plz'], request_data['place'], request_data['message'])
+
+        response_data = {
+            'status': 'success',
+            'message': 'Data received and processed successfully',
+            'data': request_data,
+        }
+
+        return jsonify(response_data)
+
+    except Exception as e:
+        print(e)
+        response_data = {
+            'status': 'error',
+            'message': e
+        }
+    return jsonify(response_data), 500
 
 # This route will handle all unknown routes and serve the index.html,
 # allowing the SPA to handle the routing.
