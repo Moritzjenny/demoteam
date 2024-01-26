@@ -25,6 +25,7 @@
 
 
       <div class="row q-mx-auto q-mt-xl" style="max-width: 500px; justify-content: center">
+        <!--
         <q-btn
           aria-label="Menu"
           class="bg-primary q-mr-lg text-white menu q-mx-auto q-mb-xl"
@@ -32,7 +33,7 @@
           style="border-radius: 20px; max-width: 200px"
           @click="downloadDocument"
         />
-        <div style="width: 50px;"></div>
+        <div style="width: 50px;"></div> -->
         <q-btn
           aria-label="Menu"
           class="bg-primary q-mr-lg text-white menu q-mx-auto q-mb-xl"
