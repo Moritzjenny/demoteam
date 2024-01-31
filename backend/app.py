@@ -3,10 +3,19 @@ try:
     from . import mailService
 except ImportError:
     import mailService
+# fix windows registry stuff
+import mimetypes
+
 
 app = Flask(__name__, static_folder='static', template_folder='static')
-app.config['MIME_TYPES'] = {'js': 'application/javascript'}
 
+mimetypes.add_type('application/javascript', '.js')
+mimetypes.add_type('text/css', '.css')
+
+# Add this line to set the MIME type for JavaScript files
+app.config['MIME_TYPES'] = {
+    '.js': 'application/javascript'
+}   
 
 # Define an API route to serve data to the frontend
 @app.route('/api/data', methods=['POST'])
@@ -34,9 +43,9 @@ def submit_form():
         print(e)
         response_data = {
             'status': 'error',
-            'message': e
+            'message': str(e)  # Convert exception to string for JSON serialization
         }
-    return jsonify(response_data), 500
+        return jsonify(response_data), 500
 
 # This route will handle all unknown routes and serve the index.html,
 # allowing the SPA to handle the routing.
@@ -48,6 +57,7 @@ def catch_all(path):
         return send_from_directory(app.static_folder, path)
     # Serve index.html for all other paths
     return send_from_directory(app.static_folder, 'index.html')
+
 
 # Run the app.
 if __name__ == "__main__":
